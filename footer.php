@@ -58,7 +58,7 @@ foreach ($result as $row)
 				    		// Getting current date
 				    		$current_date = date('Y-m-d');
 
-				    		// Getting current date and time
+				    		// Getting current date and time and
 				    		$current_date_time = date('Y-m-d H:i:s');
 
 				    		// Inserting data into the database
