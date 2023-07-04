@@ -324,7 +324,7 @@ if(!isset($_SESSION['cart_p_id'])) {
 	                                    <label for=""><?php echo LANG_VALUE_34; ?> *</label>
 	                                    <select name="payment_method" class="form-control select2" id="advFieldsStatus">
 	                                        <option value=""><?php echo LANG_VALUE_35; ?></option>
-                                            <option value="http://ecommerce.gbtm.co.ke/payments.php"> MPESA</option>
+                                            <option value="mpesa"> MPESA</option>
 	                                        <option value="PayPal"><?php echo LANG_VALUE_36; ?></option>
 	                                        <option value="Bank Deposit"><?php echo LANG_VALUE_38; ?></option>
 	                                    </select>
@@ -337,6 +337,19 @@ if(!isset($_SESSION['cart_p_id'])) {
                                         <input type="hidden" name="lc" value="UK" />
                                         <input type="hidden" name="currency_code" value="USD" />
                                         <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest" />
+
+                                        <input type="hidden" name="final_total" value="<?php echo $final_total; ?>">
+                                        <div class="col-md-12 form-group">
+                                            <input type="submit" class="btn btn-primary" value="<?php echo LANG_VALUE_46; ?>" name="form1">
+                                        </div>
+                                    </form>
+
+                                    <form class="mpesa" action="<?php echo BASE_URL; ?>payments.php" method="post" id="mpesa_form" target="_blank">
+                                        <!-- <input type="hidden" name="cmd" value="_xclick" /> -->
+                                        <!-- <input type="hidden" name="no_note" value="1" />
+                                        <input type="hidden" name="lc" value="UK" />
+                                        <input type="hidden" name="currency_code" value="USD" />
+                                        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest" /> -->
 
                                         <input type="hidden" name="final_total" value="<?php echo $final_total; ?>">
                                         <div class="col-md-12 form-group">
