@@ -321,15 +321,17 @@ if(!isset($_SESSION['cart_p_id'])) {
 	                            <div class="row">
 
 	                                <div class="col-md-12 form-group">
+                                    <a href="/payments.php" class="btn btn-primary py-2 px-4 ms-3">MPESA</a>
+
 	                                    <label for=""><?php echo LANG_VALUE_34; ?> *</label>
 	                                    <select name="payment_method" class="form-control select2" id="advFieldsStatus">
 	                                        <option value=""><?php echo LANG_VALUE_35; ?></option>
-                                            <option value="http://ecommerce.gbtm.co.ke/payments.php"> MPESA</option>
 	                                        <option value="PayPal"><?php echo LANG_VALUE_36; ?></option>
 	                                        <option value="Bank Deposit"><?php echo LANG_VALUE_38; ?></option>
 	                                    </select>
 	                                </div>
-                                    <!-- <a href="/payments.php" class="btn btn-primary py-2 px-4 ms-3">MPESA</a> -->
+                                    
+                                    <a href="/payments.php" class="btn btn-primary py-2 px-4 ms-3">MPESA</a>
 
                                     <form class="paypal" action="<?php echo BASE_URL; ?>payment/paypal/payment_process.php" method="post" id="paypal_form" target="_blank">
                                         <input type="hidden" name="cmd" value="_xclick" />
