@@ -321,7 +321,6 @@ if(!isset($_SESSION['cart_p_id'])) {
 	                            <div class="row">
 
 	                                <div class="col-md-12 form-group">
-                                    <a href="/payments.php" class="btn btn-primary py-2 px-4 ms-3">MPESA</a>
 
 	                                    <label for=""><?php echo LANG_VALUE_34; ?> *</label>
 	                                    <select name="payment_method" class="form-control select2" id="advFieldsStatus">
