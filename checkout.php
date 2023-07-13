@@ -329,7 +329,7 @@ if(!isset($_SESSION['cart_p_id'])) {
 	                                        <option value="Bank Deposit"><?php echo LANG_VALUE_38; ?></option>
 	                                    </select>
 	                                </div>
-                                    <a href="/payments.php" class="btn btn-primary py-2 px-4 ms-3">                                    <img src="1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" />                                    
+                                    <a href="/payments.php" class="btn btn-light py-2 px-4 ms-3">                                    <img src="1200px-M-PESA_LOGO-01.svg.png" class="mr-3" height="75" />                                    
 MPESA</a>
 
                                     <form class="paypal" action="<?php echo BASE_URL; ?>payment/paypal/payment_process.php" method="post" id="paypal_form" target="_blank">
