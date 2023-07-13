@@ -5,8 +5,8 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'QEb6AZqULJXm5cy24Ue7E1qSKUN8OAgg'; //Fill with your app Consumer Key
-  $consumerSecret = '9ZdGKfzi5Zbi1oGQ'; // Fill with your app Secret
+  $consumerKey = 'hY1r9GEo2LFleHw3PcOvsbRziUeKFU7i'; //Fill with your app Consumer Key
+  $consumerSecret = 'lfBZr0bENpkGK6n9'; // Fill with your app Secret
 
   # define the variale
   # provide the following details, this part is found on your test credentials on the developer account
